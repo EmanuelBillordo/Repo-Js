@@ -17,31 +17,8 @@
 
 </head>
 <body>
-    <header>
-        <h1 id="titulo" class="titulo">La isla</h1>
-        <button id="sweetalert">Informacion</button>
-        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
-    </header>
-
-    <main id="contenedor-productos">
-
-    </main>
-
-    <div class="modal-contenedor">
-        <div class="modal-carrito">
-            <h3>Carrito</h3>
-            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
-            <div id="carrito-contenedor">
-                <!-- <div class="productoEnCarrito">
-                    <p>Buzo 1</p>
-                    <p>Precio: $1200</p>
-                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
-                </div> -->
-            </div>
-            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
-            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
-        </div>
-    </div>
+    
+    <div id="elem"></div>
     <script>
         document.getElementById("sweetalert").addEventListener('click', function(){
             Swal.fire('Muchas gracias por comprar aqui')
@@ -49,3 +26,29 @@
     </script>
 </body>
 </html>
+--------------------------------------------------------
+<header>
+    <h1 id="titulo" class="titulo">La isla</h1>
+    <button id="sweetalert">Informacion</button>
+    <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+</header>
+
+<main id="contenedor-productos">
+
+</main>
+
+<div class="modal-contenedor">
+    <div class="modal-carrito">
+        <h3>Carrito</h3>
+        <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+        <div id="carrito-contenedor">
+            <!-- <div class="productoEnCarrito">
+                <p>Buzo 1</p>
+                <p>Precio: $1200</p>
+                <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+            </div> -->
+        </div>
+        <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+        <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+    </div>
+</div>

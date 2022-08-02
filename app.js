@@ -1,4 +1,4 @@
-
+/*
 const contenedorProductos = document.getElementById('contenedor-productos')
 
 //TERCER PASO
@@ -128,7 +128,25 @@ const actualizarCarrito = () => {
     //empezando en 0.
 
 }
+*/
 
+//ejemplo
+
+const url = "https://pokeapi.co/api/v2/pokemon//"
+
+fetch (url)
+.then(response => response.json())
+.then(data => {
+
+    let element = document.getElementById("elem")
+    element.innerHTML = `
+    <p> ${data.name}</p>
+    <p> ${data.order} </p
+    <img src="${data.sprites.front_default}"/>`;
+
+    console.log(data)
+})
+.catch(err =>console.log(err))
 
 
 
