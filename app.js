@@ -132,7 +132,7 @@ const actualizarCarrito = () => {
 
 //ejemplo
 
-const url = "https://pokeapi.co/api/v2/pokemon//"
+const url = "https://pokeapi.co/api/v2/pokemon/1/"
 
 fetch (url)
 .then(response => response.json())
